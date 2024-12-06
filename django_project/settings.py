@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "secretkey"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = [".vercel.app", ".now.sh", "127.0.0.1", "localhost", "blogwithdjango-de21cf8dea87.herokuapp.com"]
 ALLOWED_HOSTS = ['m0er.pythonanywhere.com']
