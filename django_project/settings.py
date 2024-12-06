@@ -29,7 +29,7 @@ SECRET_KEY = "secretkey"
 DEBUG = False
 
 # ALLOWED_HOSTS = [".vercel.app", ".now.sh", "127.0.0.1", "localhost", "blogwithdjango-de21cf8dea87.herokuapp.com"]
-ALLOWED_HOSTS = ['m0er.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'm0er.pythonanywhere.com']
 
 
 # Application definition
