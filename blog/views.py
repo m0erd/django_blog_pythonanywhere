@@ -2,12 +2,9 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from django.http import HttpResponse
 from .models import Post
 
 
-# def home(request):
-#     return HttpResponse("<h1>Blog Home</h1>")
 def home(request):
     context = {
         "posts": Post.objects.all()
@@ -73,7 +70,5 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return False
 
 
-# def about(request):
-#     return HttpResponse("<h1>Blog About</h1>")
 def about(request):
     return render(request, "blog/about.html", {"title": "About"})

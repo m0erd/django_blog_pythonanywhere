@@ -2,7 +2,7 @@ Pipfile
 Pipfile.lock
 vercel.json
 .idea/
-
+.gitignore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

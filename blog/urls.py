@@ -11,8 +11,3 @@ urlpatterns = [
     path('post/<int:pk>/delete/', PostDeleteView.as_view(), name="post-delete"),
     path("about/", views.about, name="blog-about")
 ]
-
-# <pk> means primary key
-# path('post/<int:pk>', PostDetailView.as_view(), name="post-detail") specifying pk variable in the url that allows us
-# to grab that value from the url use it in our view function and this case we're using a class-based view so that will
-# be passed to the class-based view
